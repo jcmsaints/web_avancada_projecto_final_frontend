@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+html,
+body,
+#root {
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  height: 10%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.centerDiv {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.container-fluid {
+  height: 100%;
+  overflow-y: hidden; /* don't show content that exceeds my height */
+}
+.main {
+  height: 90%;
+  font: 100% Roboto, sans-serif;
+  background: url(https://wallpapercave.com/wp/aZlqiAT.png) 50% 50% no-repeat;
+  background-size: cover;
+  background-color: #e5e5e5;
+  background-attachment: fixed;
+}
+.menuIcon {
+  color: white;
+  width: 25%;
+}
+.backgroundWhite {
+  height: calc(100% - 75px);
+  background-color: white;
+  opacity: 0.9;
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.greenSimbol {
+  color: green;
+  background-color: #ced4da !important;
+}
+.inputValue {
+  background-color: #f5f7fa !important;
+}
+.imgFixSize {
+  height: 50px;
+  width: 50px;
+}
+
+.hideElem {
+  display: none;
+}
+
+.containerSquare {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.color-white {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+footer {
+  height: 50px;
+}
+.contentInBox {
+  margin-right: 3%;
+  margin-left: 3%;
+}
+.btn-right {
+  float: right;
+}
+#example_wrapper {
+  margin-left: 5%;
+  margin-right: 8%;
+}
+.errorMessage {
+  color: red;
+}
+.headerInList {
+  height: 80px;
+}
+.table {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ReactModal__Overlay {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.no-border {
+  border: 0px !important;
+}
+.Modal {
+  position: absolute;
+  top: 240px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  height: 180px;
+  width: 290px;
+  background-color: white;
+}
+.ModalFilter {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  right: 40px;
+  bottom: 40px;
+  height: 510px;
+  width: 350px;
+  background-color: white;
+}
+.loginDiv {
+  height: 97%;
 }
