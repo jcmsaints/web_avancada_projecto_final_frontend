@@ -130,7 +130,7 @@ export default class ListExpense extends Component {
   componentDidMount() {
     this.getResults();
     var url = Constants.CATEGORIA_SECTION;
-    url += "&email=" + window.user.email;
+    url += "?email=" + window.user.email;
     var resolve = (response) => {
       if (response.data) {
         var result = response.data.map((item) => ({

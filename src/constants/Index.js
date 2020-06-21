@@ -1,3 +1,4 @@
+//export const BASE_URL = "https://expensejs.herokuapp.com/";
 export const BASE_URL = "http://localhost:5000/";
 //Sections
 export const DESPESA_SECTION = "despesa";
