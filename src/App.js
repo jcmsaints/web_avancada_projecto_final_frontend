@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 //Firebase
 import withFirebaseAuth from "react-with-firebase-auth";
 import * as firebase from "firebase/app";
+import "firebase/analytics";
 import "firebase/auth";
 import firebaseConfig from "./firebaseConfig";
 //Constants
@@ -20,7 +21,7 @@ import ExpenseCreateComponent from "./components/expense/create-expense.componen
 import ExpenseEditComponent from "./components/expense/edit-expense.component";
 import ExpenseListComponent from "./components/expense/list-expense.component";
 const firebaseApp = firebase.initializeApp(firebaseConfig);
-
+const analytics = firebase.analytics();
 class App extends Component {
   render() {
     const { user, signOut, signInWithGoogle } = this.props;
